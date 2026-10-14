@@ -1,4 +1,4 @@
-# BOYCOTT WEB 2026 — Proyecto organizado (V13)
+# BOYCOTT WEB 2026 — Proyecto organizado
 
 Este proyecto parte de `BOYCOTT_WEB_2026_V13_DEMO(1).html` y **mantiene su contenido y diseño**, con HTML, CSS, JavaScript e imágenes separados.
 
