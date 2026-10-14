@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f0df" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Propuesta conceptual independiente para la experiencia web Boycott. No afiliada ni autorizada por la marca." />
+  <title>BOYCOTT — V13 · Poses fluidas y proporciones</title>
+  <!-- Estilos separados: tipografías, base, experiencia y ajustes finales -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/overrides.css">
+
+  <!-- JavaScript organizado por responsabilidad. Respeta este orden de carga. -->
+  <script src="js/data.js" defer></script>
+  <script src="js/graphics.js" defer></script>
+  <script src="js/characters.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="js/router.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body>
+<!-- Aviso conceptual y acceso directo al contenido -->
+  <div class="concept-strip">PROTOTIPO CONCEPTUAL INDEPENDIENTE · NO ES EL SITIO OFICIAL DE BOYCOTT</div>
+  <a class="skip-link" href="#app" onclick="event.preventDefault();document.getElementById('app').focus();">Saltar al contenido</a>
+  <div id="intro" class="intro" aria-label="Animación de bienvenida">
+    <div class="intro-splash"><img width="200" height="200" src="assets/characters/brand-transparent.png" alt="" /><span>BOYCOTT!</span><p>GOOD BURGERS · REAL FLAVORS</p></div>
+    <button id="skipIntro" class="skip-intro" type="button">Saltar intro ↗</button>
+  </div>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Boycott, volver a inicio"><img src="assets/characters/brand-transparent.png" alt=""/><span>BOYCOTT</span></a>
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <a href="#/" data-route="home">INICIO</a><a href="#/menu" data-route="menu">CARTA</a><a href="#/locales" data-route="locales">LOCALES</a><a href="#/nosotros" data-route="nosotros">NOSOTROS</a><a href="#/eventos" data-route="eventos">EVENTOS</a><a href="#/pedir" data-route="pedir">PEDIR</a>
+    </nav>
+    <a href="#/pedir" class="topbar-action">PEDIR AHORA <span>↗</span></a>
+    <button id="navToggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileDrawer"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="menu-line-top" d="M4 6h16"/><path class="menu-line-middle" d="M4 12h16"/><path class="menu-line-bottom" d="M4 18h16"/></svg></button>
+  </header>
+  <nav id="mobileDrawer" class="mobile-drawer" aria-label="Menú móvil"><a href="#/">INICIO</a><a href="#/menu">CARTA</a><a href="#/locales">LOCALES</a><a href="#/nosotros">NOSOTROS</a><a href="#/eventos">EVENTOS</a><a href="#/pedir">PEDIR</a></nav>
+  <!-- Aquí el JavaScript renderiza las secciones Inicio, Carta, Locales, Nosotros, Eventos y Pedir -->
+  <main id="app" tabindex="-1"></main>
+  <nav class="bottom-nav" aria-label="Navegación móvil">
+     <a href="#/" data-route="home"><span class="b-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg></span><span>Inicio</span></a>
+     <a href="#/menu" data-route="menu"><span class="b-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3 14c0-5 3-8 9-8s9 3 9 8H3Z"/><path d="M3 17h18M5 21h14"/><path d="M8 2v2M15 2v2"/></svg></span><span>Carta</span></a>
+     <a href="#/locales" data-route="locales"><span class="b-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>Locales</span></a>
+     <a href="#/pedir" data-route="pedir"><span class="b-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 8h16l-1 13H5L4 8ZM9 8V6a3 3 0 0 1 6 0v2"/></svg></span><span>Pedir</span></a>
+  </nav>
+  <footer class="footer"><div><strong>BOYCOTT<span>®</span></strong><i>GOOD BURGERS · REAL FLAVORS</i></div><div class="foot-links"><a href="#/menu">Carta</a><a href="#/locales">Locales</a><a href="#/nosotros">Nosotros</a><a href="#/eventos">Eventos</a><a href="#/pedir">Pedir</a><a href="https://linktr.ee/boycott.pe" target="_blank" rel="noopener noreferrer">Canales oficiales ↗</a></div><div class="footer-social"><a href="https://linktr.ee/boycott.pe" target="_blank" rel="noopener noreferrer" aria-label="Enlaces oficiales de Boycott">CANALES DE LA MARCA ↗</a></div><p>Proyecto conceptual independiente de portafolio. No afiliado ni autorizado por Boycott. Logotipo y personaje pertenecen a sus respectivos titulares. Precios de referencia de la carta facilitada; sujetos a cambios. Ilustraciones de productos no oficiales.</p></footer>
+  <!-- V9 contextual tips. No chat, no data collection. -->
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+  <aside id="boycottGuide" class="boycott-guide" aria-label="Consejos del universo Boycott" hidden>
+    <div id="guideTip" class="tip-card" hidden>
+      <div class="tip-card-header"><span><span aria-hidden="true">✳</span> TIP DEL CREW</span><button id="guideClose" type="button" aria-label="Cerrar consejo">×</button></div>
+      <p id="tipCopy">¿YA VISTE LA CARTA?</p>
+      <div class="tip-actions"><a id="tipAction" href="#/menu">VER CARTA ↗</a><button id="tipNext" type="button" aria-label="Otro consejo">OTRO TIP →</button></div>
+      <button id="guideDismiss" type="button">Ocultar consejos</button>
+    </div>
+    <button id="guideMascot" class="guide-mascot" type="button" aria-label="Ver un consejo del crew" aria-expanded="false" aria-controls="guideTip">
+      <span class="tip-spark" aria-hidden="true">✦</span><img id="guideCharacter" src="assets/characters/boycott1.1-400.webp" alt="" draggable="false" />
+      <span class="tip-indicator" aria-hidden="true">¿UN TIP?</span>
+    </button>
+  </aside>
+  <button id="guideRestore" class="guide-restore" type="button" hidden>✳ Consejos</button>
+<!-- Fin de la estructura HTML; catálogo, vistas y animaciones viven en js/ -->
+</body>
+</html>
